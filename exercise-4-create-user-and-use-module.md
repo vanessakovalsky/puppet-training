@@ -30,7 +30,6 @@ getenv passwd $user
 ```
 
 
-
 ## Installer et utiliser un module de la forge
 
 * La forge de puppet fournit de nombreux modules pré-existant : https://forge.puppet.com/ 
@@ -41,7 +40,7 @@ getenv passwd $user
 
 * Où le module s'est t'il installé ?
 * Ecrire un manifeste qui utilise ce module
-* Exécuter le manigeste que vous avez écrit
+* Exécuter le manifeste que vous avez écrit
 * Vérifier que python est installé avec la commande 
 ```shell
 python --version
