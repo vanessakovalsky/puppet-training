@@ -10,28 +10,10 @@ services:
         - ./code:/etc/puppetlabs/code/
         - ./puppet/ssl:/etc/puppetlabs/puppet/ssl/
         - ./puppet/serverdata:/opt/puppetlabs/server/data/puppetserver/
-   postgres:
-      hostname: postgres
-      image: postgres
-      ports:
-         - 5432
-   puppetdb:
-      hostname: puppetdb
-      image: puppet/puppetdb
-      ports:
-          - 8080
-          - 8081
-      volumes:
-          - ./puppetdb/ssl:/etc/puppetlabs/puppet/ssl/
    puppetboard:
       image: puppet/puppetboard
       ports:
          - 8000
-   puppetexplorer:
-      image: puppet/puppetexplorer
-      ports:
-         - 80
-      read_only: true
    puppetagentubuntu:
       image: puppet/puppet-agent-ubuntu
       hostname: ubuntu
