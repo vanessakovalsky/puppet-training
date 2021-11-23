@@ -21,7 +21,9 @@ pdk new class my_notifier
 
 ## Construire, installer et utiliser le module 
 
-* Utiliser la commande puppet module build notifier_myuser pour construire votre module et pouvoir l'utiliser
-* Installer votre module avec la commande puppet module install
+* Utiliser la commande pdk build notifier_myuser pour construire votre module et pouvoir l'utiliser
+* Pour utiliser votre module : 
+  * Soit vous le livrer (en vous créant un compte) sur la forge avec pdk release puis puppet module install
+  * Soit vous copier le contenu de votre module vers /etc/puppetlabs/code/modules/
 
 * Créer un manifeste dans lequel vous utiliser votre module et appliquer votre manifeste.
